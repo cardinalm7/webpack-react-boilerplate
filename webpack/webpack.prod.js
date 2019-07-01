@@ -52,17 +52,9 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: false,
-              modules: true,
-              camelCase: true,
-              localIdentName: '[local]___[hash:base64:5]',
-            },
-          },
-          'sass-loader',
+          'style-loader', // creates style nodes from JS strings
+          'css-loader', // translates CSS into CommonJS
+          'sass-loader', // compiles Sass to CSS, using Node Sass by default
         ],
       },
     ],

@@ -1,0 +1,45 @@
+#visual-dev,
+#story-teller,
+#designer,
+#email,
+#enmovie,
+#active,
+#play,
+.lightbox-image,
+.image {
+  cursor: pointer;
+}
+
+.wrapper {
+  height: fit-content;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: content-box;
+  background-color: black;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  max-width: 1080px;
+  background-color: gray;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  background-size: cover;
+  &.designer {
+    background-image: url('./assets/home/main-background.jpg');
+  }
+  &.visual-dev {
+    background-image: url('./assets/vis/vis-dev-background.jpg');
+  }
+  &.story-teller {
+    background-image: url('./assets/story/story-background.jpg');
+  }
+}

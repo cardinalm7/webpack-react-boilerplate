@@ -1,0 +1,67 @@
+.sketch-slide-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  width: 75%;
+  position: relative;
+  min-width: 200px;
+  .sketch-shadow {
+    // background-image: url('../../../assets/home/slide-shadow.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    // padding-bottom: 6%;
+    // padding-right: 2%;
+  }
+  .sketch-images {
+    width: 100%;
+    position: relative;
+    background-size: contain;
+    background-position: top center;
+    img {
+      width: 100%;
+      // height: 100%;
+    }
+    .pause-play {
+      display: inline;
+      position: absolute;
+      width: 30%;
+      height: auto;
+      bottom: 48%;
+      left: 36%;
+      z-index: 4;
+    }
+    .active-slide,
+    .next-slide {
+      display: inline;
+    }
+  }
+}
+
+.active-slide {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.next-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  box-shadow: 9px 20px 21px -7px #111111;
+}
+
+.fadeOut {
+  opacity: 1;
+  transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -webkit-transition: opacity 0.25s;
+}
+
+.fade {
+  opacity: 0;
+}

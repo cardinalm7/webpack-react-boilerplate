@@ -13,7 +13,7 @@
   },
   "root": true,
   "rules": {
-    "indent": ["error", 2],
+    "indent": ["warn", 2],
     "react/prefer-stateless-function": "warn",
     "react/self-closing-comp": [
       "warn",
@@ -57,7 +57,7 @@
       }
     ],
     "react/jsx-indent": ["warn", 2],
-    "react/jsx-key": "error",
+    "react/jsx-key": "warn",
     "react/jsx-wrap-multilines": ["warn"],
     "react/jsx-indent-props": 0,
     "no-trailing-spaces": [2, { "skipBlankLines": true }],
